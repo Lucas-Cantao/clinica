@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #eeeeee;
+    background-image: url("../style/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.navigation{
+    width: 100%;
+    height: 110px;
+    background-color: #292d77;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-left: 40px;
+}
+.logo .pr{
+    margin-left: 40px;
+}
+#logo{
+    filter: contrast(150%);
+}
+.clinica{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+.name{
+    display: flex;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: all .3s;
+}
+.menu ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px white;
+}
+
+@media screen and (max-width:524px){
+    .menu ul{
+        display: grid;
+        place-items: center;
+        height: 80px;
+    }
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    padding-bottom: 20px;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+spam{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+#subtitle{
+    font-size: 12px;
+}
+
+.about{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.img{
+    border: 2px solid black;
+    border-radius: 25px;
+    
+}
+
+.first{
+    width: 855px;
+    display: flex;
+    color: white;
+    font-size: 18px;
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 894px) {
+    .first{
+        display: grid;
+        width: 90%;
+        place-items: center;
+    }
+    
+
+    
+    
+}
+@media screen and (min-width:894px) {
+      
+    .img{
+        margin-right: 5px;
+    }
+}
+.tratamentos{
+    display: flex;
+    justify-content: center;
+}
+#extracao, #odontopediatria, #estetica, #apOrtodonticos, #protese, #implante{
+    background-color: rgba(0,0,0,0.7);
+    height: 430px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: all .2s;
+    margin: 10px;
+    width: 25%;
+}
+@media screen and (max-width:894px){
+    #extracao, #odontopediatria, #estetica, #apOrtodonticos, #protese, #implante{
+        width: 40%;
+    }
+}
+
+#extracao:hover{
+    scale: 1.05;
+}
+#odontopediatria:hover{
+    scale: 1.05;
+}
+#estetica:hover{
+    scale: 1.05;
+}
+#apOrtodonticos:hover{
+    scale: 1.05;
+}
+#protese:hover{
+    scale: 1.05;
+}
+#implante:hover{
+    scale: 1.05;
+}
+
+.tratamentos p{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-shadow: 0 0 10px white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.texto{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(5px, 5vw, 1rem);
+}
+
+.extracao, .odontopediatria, .estetica, .apOrtodonticos, .protese, .implante{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.extracao{
+    background-image: url("../style/extração.jpeg");
+    background-size: 100% 100%;
+}
+
+.odontopediatria{
+    background-image: url("../style/odontopediatria.jpg");
+}
+.estetica{
+    background-image: url("../style/boca1.jpeg");
+
+}
+.apOrtodonticos{
+    background-image: url("../style/boca2.jpeg");
+}
+.protese{
+    background-image: url("../style/protese.jpeg");
+    background-position: center;
+}
+.implante{
+    background-image: url("../style/implantes.jpg");
+}
